@@ -1,0 +1,126 @@
+body {
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Segoe UI Emoji";
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header, footer {
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 60%;
+    background-color: #0d1117;
+    box-sizing: border-box;
+}
+
+#usernameInput {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(4, 144, 4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 79, 0);
+}
+
+#searchSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    gap: 25px;
+}
+
+#userInfo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+#resultSection {
+    display: flex;
+}
+
+#reposList {
+    list-style-type: none;
+    padding: 15px;
+    width: 100%;
+}
+
+#reposList li {
+    display: flex;
+    background-color: #323e4f;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reposList li:hover {
+    background-color: #ced7e4;
+}
+
+#reposList a.repo-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr  );
+    width: 100%;
+    text-decoration: none;
+    color: #b9d7fa;
+    padding: 10px;
+}
+
+#reposList a.repo-link .repo-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.repo-stars, .repo-commits, .repo-comments {
+    color: #b9d7fa;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+#reposList a.repo-link .repo-stars {
+    color: #f1c40f;
+}
+
+#reposList a.repo-link .repo-commits {
+    color: #3498db;
+}
+
+#reposList a.repo-link .repo-comments {
+    color: #e74c3c;
+}

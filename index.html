@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Viewer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Viewer</h1>
+    </header>
+    <main id="app">
+        <section id="searchSection">
+          <div>
+                <input type="text" id="usernameInput" placeholder="Enter name">
+                <button type="submit">Search</button><br>
+            </div>
+            <section id="userSection">
+                <div id="userInfo">
+                    
+                    <img src="" alt="userImage" id="userImage" style="display:none; width: 100px; height: 100px;">
+                    <div>
+            
+                    <p id="userFullName" style="display:none;"></p>
+                    <p id="userEmail" style="display:none;"></p>
+                    
+                </div>
+                </div>
+            </section>
+        </section>
+        <section id="resultSection">
+            <ul id="reposList"> </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Front-end Developer Recruitment Task</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
