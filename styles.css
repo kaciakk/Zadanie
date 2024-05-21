@@ -89,12 +89,12 @@ button[type="submit"]:hover {
 }
 
 #reposList li:hover {
-    background-color: #ced7e4;
+    background-color: #323437;
 }
 
 #reposList a.repo-link {
     display: grid;
-    grid-template-columns: repeat(4, 1fr  );
+    grid-template-columns: repeat(4, 1fr );
     width: 100%;
     text-decoration: none;
     color: #b9d7fa;
@@ -123,4 +123,43 @@ button[type="submit"]:hover {
 
 #reposList a.repo-link .repo-comments {
     color: #e74c3c;
+}
+@media (max-width: 1024px) {
+    #app {
+        width: 80%;
+    }
+
+    #reposList a.repo-link {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #app {
+        width: 90%;
+    }
+
+    #reposList a.repo-link {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #reposList a.repo-link .repo-stars, 
+    #reposList a.repo-link .repo-commits, 
+    #reposList a.repo-link .repo-comments {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #app {
+        width: 95%;
+    }
+
+    #reposList a.repo-link {
+        grid-template-columns: 1fr;
+    }
+
+    #reposList a.repo-link .repo-name {
+        font-size: 0.9rem;
+    }
 }
